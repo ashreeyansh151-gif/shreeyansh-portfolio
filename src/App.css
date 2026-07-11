@@ -595,3 +595,11 @@ box-shadow:0 0 40px rgba(212,175,55,.5);
     }
 
 }
+/* Mobile view */
+@media (max-width: 768px) {
+  profile-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+  }
+}
