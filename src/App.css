@@ -1,0 +1,553 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#0d0d0d;
+color:white;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 10%;
+    gap:60px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:380px;
+    max-width:100%;
+    border-radius:20px;
+    border:5px solid #D4AF37;
+    box-shadow:0 0 40px rgba(212,175,55,.4);
+    transition:0.4s;
+}
+
+.hero-image img:hover{
+    transform:scale(1.03);
+}
+
+
+
+.hero-text{
+
+max-width:700px;
+
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:800;
+    line-height:1.1;
+}
+
+.hero h2{
+    color:#D4AF37;
+    margin:20px 0;
+}
+
+.hero p{
+    color:#cfcfcf;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.hero h2{
+
+color:#D4AF37;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+line-height:1.8;
+
+color:#cccccc;
+
+margin-bottom:30px;
+
+}
+
+button{
+
+padding:15px 35px;
+
+border:none;
+
+background:#D4AF37;
+
+border-radius:10px;
+
+font-size:17px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+margin-right:15px;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:translateY(-5px);
+
+}
+
+.contact-btn{
+
+background:transparent;
+
+color:#D4AF37;
+
+border:2px solid #D4AF37;
+
+}
+
+.hero-image img{
+
+width:380px;
+
+border-radius:25px;
+
+border:5px solid #D4AF37;
+
+box-shadow:0 0 40px rgba(212,175,55,.5);
+
+}
+@media (max-width:900px){
+
+.hero{
+    padding-top: 120px;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero-image img{
+    width:280px;
+}
+
+}
+.about{
+    padding:100px 10%;
+    text-align:center;
+}
+
+.about h2{
+    font-size:42px;
+    color:#D4AF37;
+    margin-bottom:25px;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+    color:#cccccc;
+    font-size:18px;
+}
+/* Cricket Section */
+
+.Cricket {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.Cricket h2 {
+  font-size: 42px;
+  color: #D4AF37;
+  margin-bottom: 30px;
+}
+
+.Cricket-card {
+  max-width: 700px;
+  margin: auto;
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid #D4AF37;
+  text-align: left;
+  line-height: 2;
+}
+
+.Cricket-card hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #444;
+}
+/* ================= ACHIEVEMENTS ================= */
+
+.Achievements{
+    width:100%;
+    padding:100px 40px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.Achievements h2{
+    font-size:42px;
+    color:#D4AF37;
+    margin-bottom:40px;
+}
+
+.Achievement-container{
+    width:100%;
+    max-width:1200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.Achievement-card{
+    width:300px;
+    background:#1a1a1a;
+    border:2px solid #D4AF37;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.Achievement-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(212,175,55,.4);
+}
+
+.Achievement-card h3{
+    color:#D4AF37;
+    margin-bottom:15px;
+}
+/* ================= SKILLS ================= */
+
+.Skills {
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.Skills h2 {
+    font-size: 42px;
+    color: #D4AF37;
+    margin-bottom: 40px;
+}
+
+.Skills-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.Skill-card {
+    width: 260px;
+    background: #1a1a1a;
+    border: 2px solid #D4AF37;
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.Skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(212,175,55,.4);
+}
+
+.Skill-card h3 {
+    color: #D4AF37;
+    margin-bottom: 15px;
+}
+
+.Skill-card p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+/* ================= GALLERY ================= */
+
+/* ================= GALLERY ================= */
+
+.Gallery {
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.Gallery h2 {
+    font-size: 42px;
+    color: #D4AF37;
+    margin-bottom: 40px;
+}
+
+/* Large profile image */
+
+.featured-profile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.featured-profile img {
+    width: 320px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 4px solid #D4AF37;
+    box-shadow: 0 0 25px rgba(212,175,55,0.4);
+    transition: 0.3s;
+}
+
+.featured-profile img:hover {
+    transform: scale(1.03);
+}
+
+/* Gallery grid */
+
+.Gallery-container {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.Gallery-container img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #D4AF37;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.Gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(212,175,55,0.5);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .Gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured-profile img {
+        width: 250px;
+        height: 330px;
+    }
+}
+/* ================= NAVBAR ================= */
+
+.Navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 10%;
+    background: rgba(13, 13, 13, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+    color: #D4AF37;
+    letter-spacing: 2px;
+}
+
+.Nav-links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.Nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.Nav-links a:hover{
+    color: #D4AF37;
+}
+.hero h2 {
+    color: #D4AF37;
+    font-size: 28px;
+    min-height: 40px;
+    margin: 20px 0;
+}
+.welcome-text{
+    color:#D4AF37;
+    font-size:30px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:9px;
+}
+.hero h2{
+    color:#D4AF37;
+    font-size:28px;
+    font-weight:600;
+    margin:20px 0;
+    min-height:40px;
+}
+/* ================= CERTIFICATES ================= */
+
+.Certificates{
+    padding:100px 40px;
+    text-align:center;
+}
+
+.Certificates h2{
+    font-size:42px;
+    color:#D4AF37;
+    margin-bottom:40px;
+}
+
+.Certificates-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.Certificates-card{
+    width:320px;
+    background:#1a1a1a;
+    border:2px solid #D4AF37;
+    border-radius:15px;
+    padding:30px;
+    transition:.3s;
+}
+
+.Certificates-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(212,175,55,.4);
+}
+
+.Certificates-card h3{
+    color:#D4AF37;
+    margin-bottom:15px;
+}
+
+.Certificates-card p{
+    color:#ccc;
+}/* ================= CONTACT ================= */
+
+.Contact{
+    padding:100px 40px;
+    text-align:center;
+}
+
+.Contact h2{
+    font-size:42px;
+    color:#D4AF37;
+    margin-bottom:40px;
+}
+
+.Contact-container{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.Contact-card{
+    background:#1a1a1a;
+    border:2px solid #D4AF37;
+    border-radius:15px;
+    padding:30px;
+    transition:.3s;
+}
+
+.Contact-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(212,175,55,.4);
+}
+
+.Contact-card h3{
+    color:#D4AF37;
+    margin-bottom:15px;
+}
+
+.Contact-card p,
+.Contact-card a{
+    color:#ffffff;
+    text-decoration:none;
+    word-break:break-word;
+}
+
+.Contact-card a:hover{
+    color:#D4AF37;
+}
+/* ================= FOOTER ================= */
+
+.Footer{
+    padding:30px 20px;
+    background:#111;
+    text-align:center;
+    border-top:1px solid rgba(212,175,55,.3);
+}
+
+.Footer p{
+    color:#bbb;
+    margin:8px 0;
+    font-size:15px;
+}
+
+.Footer p:last-child{
+    color:#D4AF37;
+}
+/* ================= BACK TO TOP ================= */
+
+.back-to-top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #D4AF37;
+    color: #111;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,.3);
+    transition: transform .3s ease, box-shadow .3s ease;
+    z-index: 1000;
+}
+
+.back-to-top:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(212,175,55,.35);
+}
