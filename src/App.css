@@ -360,45 +360,8 @@ box-shadow:0 0 40px rgba(212,175,55,.5);
         height: 330px;
     }
 }
-/* ================= NAVBAR ================= */
 
-.Navbar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 18px 10%;
-    background: rgba(13, 13, 13, 0.9);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
 
-.logo{
-    font-size: 28px;
-    font-weight: 700;
-    color: #D4AF37;
-    letter-spacing: 2px;
-}
-
-.Nav-links{
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-.Nav-links a{
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.Nav-links a:hover{
-    color: #D4AF37;
-}
 .hero h2 {
     color: #D4AF37;
     font-size: 28px;
@@ -550,4 +513,85 @@ box-shadow:0 0 40px rgba(212,175,55,.5);
 .back-to-top:hover{
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(212,175,55,.35);
+}
+/* ================= NAVBAR ================= */
+
+.Navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 10%;
+    background: rgba(13,13,13,.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+    color: #D4AF37;
+    letter-spacing: 2px;
+}
+
+.Nav-links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.Nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.Nav-links a:hover{
+    color:#D4AF37;
+}
+
+.menu-icon{
+    display:none;
+    font-size:30px;
+    color:#D4AF37;
+    cursor:pointer;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+    .Navbar{
+        padding:15px 20px;
+    }
+
+    .logo{
+        font-size:22px;
+    }
+
+    .menu-icon{
+        display:block;
+    }
+
+    .Nav-links{
+        display:none;
+        position:absolute;
+        top:65px;
+        left:0;
+        width:100%;
+        background:#111;
+        flex-direction:column;
+        gap:20px;
+        padding:20px 0;
+        text-align:center;
+    }
+
+    .Nav-links.active{
+        display:flex;
+    }
+
 }
