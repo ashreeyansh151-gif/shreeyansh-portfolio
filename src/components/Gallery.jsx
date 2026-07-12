@@ -1,25 +1,23 @@
-import { useState } from "react";
+import profile from "../assets/images/profile.jpeg";
+import batting1 from "../assets/images/batting1.jpeg";
+import batting2 from "../assets/images/batting2.jpeg";
+import team from "../assets/images/team.jpeg";
+import national from "../assets/images/national.jpeg";
+import side from "../assets/images/side.jpeg";
+import sports from "../assets/images/sports.jpeg";
+import front from "../assets/images/front.jpeg";
+import white from "../assets/images/white.jpeg";
 
-<div className="gallery-container">
-  {images.map((image, index) => (
-    <img
-      key={index}
-      src={image}
-      alt={`Gallery ${index + 1}`}
-      onClick={() => setSelectedImage(image)}
-    />
-  ))}
-</div>
 function Gallery() {
   return (
-    <section className="Gallery" id="📸Gallery">
+    <section className="gallery" id="gallery">
       <h2>📸 Cricket Gallery</h2>
 
       <div className="featured-profile">
         <img src={profile} alt="Profile" />
       </div>
 
-      <div className="Gallery-container">
+      <div className="gallery-container">
         <img src={batting1} alt="Batting 1" />
         <img src={batting2} alt="Batting 2" />
         <img src={team} alt="Team" />
@@ -28,16 +26,7 @@ function Gallery() {
         <img src={white} alt="White" />
         <img src={front} alt="Front" />
         <img src={sports} alt="Sports" />
-        const [selectedImage, setSelectedImage] = useState(null);
       </div>
-      {selectedImage && (
-  <div
-    className="lightbox"
-    onClick={() => setSelectedImage(null)}
-  >
-    <img src={selectedImage} alt="Preview" />
-  </div>
-)}
     </section>
   );
 }
