@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 <div className="gallery-container">
   {images.map((image, index) => (
     <img
@@ -8,8 +10,6 @@
     />
   ))}
 </div>
-import { useState } from "react";
-
 function Gallery() {
   return (
     <section className="Gallery" id="📸Gallery">
