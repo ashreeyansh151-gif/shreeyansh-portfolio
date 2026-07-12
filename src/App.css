@@ -671,3 +671,27 @@ box-shadow:0 0 40px rgba(212,175,55,.5);
 html{
     scroll-behavior:smooth;
 }
+.gallery-container img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}

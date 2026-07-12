@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import profile from "../assets/images/profile.jpeg";
 import batting1 from "../assets/images/batting1.jpeg";
 import batting2 from "../assets/images/batting2.jpeg";
@@ -9,6 +11,19 @@ import front from "../assets/images/front.jpeg";
 import white from "../assets/images/white.jpeg";
 
 function Gallery() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const images = [
+    batting1,
+    batting2,
+    team,
+    national,
+    side,
+    white,
+    front,
+    sports,
+  ];
+
   return (
     <section className="gallery" id="gallery">
       <h2>📸 Cricket Gallery</h2>
@@ -18,15 +33,24 @@ function Gallery() {
       </div>
 
       <div className="gallery-container">
-        <img src={batting1} alt="Batting 1" />
-        <img src={batting2} alt="Batting 2" />
-        <img src={team} alt="Team" />
-        <img src={national} alt="National" />
-        <img src={side} alt="Side" />
-        <img src={white} alt="White" />
-        <img src={front} alt="Front" />
-        <img src={sports} alt="Sports" />
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`Gallery ${index + 1}`}
+            onClick={() => setSelectedImage(image)}
+          />
+        ))}
       </div>
+
+      {selectedImage && (
+        <div
+          className="lightbox"
+          onClick={() => setSelectedImage(null)}
+        >
+          <img src={selectedImage} alt="Preview" />
+        </div>
+      )}
     </section>
   );
 }
