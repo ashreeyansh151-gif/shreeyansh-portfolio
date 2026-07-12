@@ -25,14 +25,14 @@ function Gallery() {
   ];
 
   return (
-    <section className="gallery" id="gallery">
+    <section className="Gallery" id="Gallery">
       <h2>📸 Cricket Gallery</h2>
 
       <div className="featured-profile">
         <img src={profile} alt="Profile" />
       </div>
 
-      <div className="gallery-container">
+      <div className="Gallery-container">
         {images.map((image, index) => (
           <img
             key={index}
