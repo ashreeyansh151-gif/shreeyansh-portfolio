@@ -288,64 +288,82 @@ box-shadow:0 0 40px rgba(212,175,55,.5);
 }
 /* ================= GALLERY ================= */
 
-/* ================= GALLERY ================= */
-
-.Gallery {
-    padding: 100px 40px;
-    text-align: center;
+.gallery{
+    padding:100px 8%;
+    text-align:center;
 }
 
-.Gallery h2 {
-    font-size: 42px;
-    color: #D4AF37;
-    margin-bottom: 40px;
+.gallery h2{
+    font-size:42px;
+    color:#D4AF37;
+    margin-bottom:40px;
 }
 
-/* Large profile image */
-
-.featured-profile {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
+.featured-profile{
+    margin-bottom:40px;
 }
 
-.featured-profile img {
-    width: 320px;
-    height: 420px;
-    object-fit: cover;
-    border-radius: 20px;
-    border: 4px solid #D4AF37;
-    box-shadow: 0 0 25px rgba(212,175,55,0.4);
-    transition: 0.3s;
+.featured-profile img{
+    width:280px;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+    border:3px solid #D4AF37;
+    box-shadow:0 0 25px rgba(212,175,55,.4);
+    transition:.4s;
 }
 
-.featured-profile img:hover {
-    transform: scale(1.03);
+.featured-profile img:hover{
+    transform:scale(1.03);
 }
 
-/* Gallery grid */
-
-.Gallery-container {
-    max-width: 900px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
 }
 
-.Gallery-container img {
-    width: 100%;
-    height: 170px;
-    object-fit: cover;
-    border-radius: 12px;
-    border: 2px solid #D4AF37;
-    transition: 0.3s;
-    cursor: pointer;
+.gallery-container img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    border:2px solid #D4AF37;
+    transition:.3s;
+    cursor:pointer;
 }
 
-.Gallery-container img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(212,175,55,0.5);
+.gallery-container img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(212,175,55,.5);
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.gallery{
+    padding:70px 20px;
+}
+
+.gallery h2{
+    font-size:32px;
+}
+
+.featured-profile img{
+    width:220px;
+    height:280px;
+}
+
+.gallery-container{
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.gallery-container img{
+    height:170px;
+}
+
 }
 
 @media (max-width:768px){
