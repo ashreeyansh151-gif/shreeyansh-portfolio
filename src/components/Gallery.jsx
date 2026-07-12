@@ -1,12 +1,14 @@
-import batting1 from "../assets/images/batting1.jpeg";
-import batting2 from "../assets/images/batting2.jpeg";
-import profile from "../assets/images/profile.jpeg";
-import team from "../assets/images/team.jpeg";
-import front from "../assets/images/front.jpeg";
-import national from "../assets/images/national.jpeg";
-import side from "../assets/images/side.jpeg";
-import sports from "../assets/images/sports.jpeg";
-import white from "../assets/images/white.jpeg";
+<div className="gallery-container">
+  {images.map((image, index) => (
+    <img
+      key={index}
+      src={image}
+      alt={`Gallery ${index + 1}`}
+      onClick={() => setSelectedImage(image)}
+    />
+  ))}
+</div>
+import { useState } from "react";
 
 function Gallery() {
   return (
@@ -26,7 +28,16 @@ function Gallery() {
         <img src={white} alt="White" />
         <img src={front} alt="Front" />
         <img src={sports} alt="Sports" />
+        const [selectedImage, setSelectedImage] = useState(null);
       </div>
+      {selectedImage && (
+  <div
+    className="lightbox"
+    onClick={() => setSelectedImage(null)}
+  >
+    <img src={selectedImage} alt="Preview" />
+  </div>
+)}
     </section>
   );
 }
