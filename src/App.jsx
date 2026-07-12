@@ -40,7 +40,9 @@ function App() {
 
           <div className="buttons">
             <button>Explore Journey</button>
-            <button className="contact-btn">Contact Me</button>
+            <button className="contact-btn" id="📞Contact">
+              Contact Me
+            </button>
           </div>
         </div>
 
