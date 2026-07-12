@@ -392,11 +392,12 @@ box-shadow:0 0 40px rgba(212,175,55,.5);
     transform: scale(1.05);
 }
 
-.Gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
+.gallery-container img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
 .Gallery-container img {
