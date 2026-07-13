@@ -713,13 +713,20 @@ box-shadow:0 0 40px rgba(212,175,55,.5);
 html{
     scroll-behavior:smooth;
 }
-.Gallery-container img {
-  cursor: pointer;
-  transition: 0.3s;
+.Gallery-container img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:18px;
+    cursor:pointer;
+    transition:all .4s ease;
+    border:2px solid transparent;
 }
 
-.Gallery-container img:hover {
-  transform: scale(1.05);
+.Gallery-container img:hover{
+    transform:translateY(-10px) scale(1.03);
+    border-color:#D4AF37;
+    box-shadow:0 15px 35px rgba(212,175,55,.35);
 }
 
 .lightbox {
@@ -852,4 +859,12 @@ html{
     color:#111;
     transform:translateY(-5px);
     box-shadow:0 0 18px rgba(212,175,55,.6);
+}
+.Gallery-subtitle{
+    text-align:center;
+    color:#bfbfbf;
+    font-size:18px;
+    max-width:700px;
+    margin:10px auto 40px;
+    line-height:1.7;
 }
