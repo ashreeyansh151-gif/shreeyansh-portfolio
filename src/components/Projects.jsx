@@ -1,3 +1,4 @@
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import portfolio from "../assets/images/portfolio.png";
 
 function Projects() {
@@ -36,20 +37,23 @@ function Projects() {
 
             <span>{project.tech}</span>
 
-            <div className="project-buttons">
-              <a href={project.live} target="_blank" rel="noreferrer">
-                🌐 Live Demo
-              </a>
+          <div className="project-buttons">
 
-              <a href={project.github} target="_blank" rel="noreferrer">
-                💻 GitHub
-              </a>
-            </div>
+<a href={project.live} target="_blank" rel="noreferrer">
+<FaExternalLinkAlt /> Live Demo
+</a>
+
+<a href={project.github} target="_blank" rel="noreferrer">
+<FaGithub /> GitHub
+</a>
+
+</div>
           </div>
         ))}
       </div>
     </section>
   );
 }
+
 
 export default Projects;
