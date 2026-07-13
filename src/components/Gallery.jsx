@@ -46,7 +46,7 @@ function Gallery() {
   };
 
   return (
-    <section className="Gallery" id="gallery">
+    <section className="Gallery" id="📸 Gallery">
       <h2>📸 Gallery</h2>
 
       <p className="Gallery-subtitle">
