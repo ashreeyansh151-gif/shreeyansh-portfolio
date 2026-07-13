@@ -953,6 +953,6 @@ html{
     transition:0.3s;
 }
 
-.Project-card:hover .project-image{
+.Project-card:hover .Project-image{
     transform:scale(1.03);
 }
