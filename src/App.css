@@ -23,12 +23,12 @@ color:white;
 }
 
 .hero{
-    min-height:100vh;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:80px 10%;
-    gap:60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    min-height: 100vh;
+    padding: 120px 10%;
 }
 
 .hero-text{
