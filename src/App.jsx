@@ -13,7 +13,7 @@ import Backtotop from "./components/Backtotop";
 
 
 function App() {
-  return (
+  return 
     <>
       <Navbar />
       
@@ -44,12 +44,23 @@ function App() {
 >
   📄 Download Resume
 </a>
+      <div className="hero-buttons">
 
-          <div className="buttons">
-            <button>Explore Journey</button>
-            <button className="contact-btn">Contact Me</button>
-          </div>
-        </div>
+        <a href="/resume.pdf" download className="resume-btn">
+          📄 Download Resume
+        </a>
+
+        <a href="#about" className="primary-btn">
+          Explore Journey
+  </a>
+
+        <a href="#contact" className="secondary-btn">
+         Contact Me
+  </a>
+
+</div>
+
+         
 
         <div className="hero-image">
           <img src={profile} alt="Shreeyansh" />
