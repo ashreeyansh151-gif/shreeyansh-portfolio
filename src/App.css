@@ -943,3 +943,16 @@ html{
 .Project-buttons a:hover{
     transform:scale(1.05);
 }
+.Project-image{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:20px;
+    border:2px solid #D4AF37;
+    transition:0.3s;
+}
+
+.Project-card:hover .project-image{
+    transform:scale(1.03);
+}

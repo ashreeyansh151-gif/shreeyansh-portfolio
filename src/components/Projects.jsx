@@ -1,14 +1,16 @@
+import portfolio from "../assets/images/portfolio.png";
 function Projects() {
-  const Projects = [
-    {
-      title: "Personal Portfolio",
-      description:
-        "A responsive portfolio website built with React and CSS to showcase my cricket journey, skills, achievements, and contact details.",
-      tech: "React • CSS • Vite",
-      live: "https://shreeyansh-portfolio-coral.vercel.app/",
-      github: "https://github.com/ashreeyansh151-gif/shreeyansh-portfolio",
-    },
-  ];
+ const Projects = [
+  {
+    title: "Personal Portfolio",
+    image: portfolio,
+    description:
+      "A responsive portfolio website built with React, Vite and CSS showcasing my cricket journey, skills, projects and achievements.",
+    tech: "React • Vite • CSS",
+    live: "https://shreeyansh-portfolio-coral.vercel.app/",
+    github: "https://github.com/ashreeyansh151-gif/shreeyansh-portfolio",
+  },
+];
 
   return (
     <section className="Projects" id="👨‍💻 Projects">
@@ -20,6 +22,11 @@ function Projects() {
       <div className="Projects-container">
         {Projects.map((Project, index) => (
           <div className="Project-card" key={index}>
+           <img
+  src={project.image}
+  alt={project.title}
+  className="project-image"
+/>
             <h3>{Project.title}</h3>
 
             <p>{Project.description}</p>
