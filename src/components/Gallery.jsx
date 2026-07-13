@@ -25,8 +25,8 @@ function Gallery() {
   ];
 
   return (
-    <section className="Gallery" id=" 📸Gallery">
-      <h2>📸Gallery</h2>
+    <section className="Gallery" id="📸 Gallery">
+      <h2>📸 Gallery</h2>
       <p className="Gallery-subtitle">
   A glimpse of my cricket journey through matches, practice sessions, team moments, and achievements.
 </p>
