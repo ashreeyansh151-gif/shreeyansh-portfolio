@@ -138,14 +138,27 @@ function App() {
       {/* ================= OTHER SECTIONS ================= */}
 
       <About />
-      <FadeInSection/>
-      <Cricket />
-      <Achievements />
-      <Skills />
-      <Projects />
-      <Gallery />
-      <Certificates />
-      <Contact />
+      <FadeInSection>
+        <Cricket />
+      </FadeInSection>
+      <FadeInSection>
+        <Achievements />
+      </FadeInSection>
+      <FadeInSection>
+        <Skills />
+      </FadeInSection>
+      <FadeInSection>
+        <Projects />
+      </FadeInSection>
+      <FadeInSection>
+        <Gallery />
+      </FadeInSection>
+      <FadeInSection>
+        <Certificates />
+      </FadeInSection>
+      <FadeInSection>
+        <Contact />
+      </FadeInSection>
       <Footer />
       <Backtotop />
 
