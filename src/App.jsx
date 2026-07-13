@@ -18,7 +18,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Backtotop from "./components/Backtotop";
 import { motion } from "framer-motion";
-import Projects from "./componnts/Projects";
+import Projects from "./components/Projects";
 
 function App() {
   return (
