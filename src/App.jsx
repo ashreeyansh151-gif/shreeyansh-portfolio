@@ -10,7 +10,6 @@ import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Backtotop from "./components/Backtotop";
-import Resume from "./assets/Resume/SResume.pdf";
 
 
 function App() {
@@ -37,13 +36,6 @@ function App() {
   currently pursuing a BCA in AI & Data Analytics at Lovely Professional University.
   Dedicated to continuous improvement on the field and in technology.
 </p>
-<a
-  href={SResume}
-  download
-  className="Resume-btn"
->
-  📄 Download Resume
-</a>
           </p>
 
           <div className="buttons">
