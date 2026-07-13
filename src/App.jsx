@@ -37,6 +37,9 @@ function App() {
   Dedicated to continuous improvement on the field and in technology.
 </p>
           </p>
+          <a href="/resume.pdf" download className="resume-btn">
+  📄 Download Resume
+</a>
 
           <div className="buttons">
             <button>Explore Journey</button>
