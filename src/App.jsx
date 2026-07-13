@@ -10,7 +10,7 @@ import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Backtotop from "./components/Backtotop";
-import Resume from "../assets/Resume/SResume.pdf";
+import Resume from "./src/assets/Resume/SResume.pdf";
 
 
 function App() {
