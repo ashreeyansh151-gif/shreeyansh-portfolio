@@ -37,7 +37,11 @@ function App() {
   Dedicated to continuous improvement on the field and in technology.
 </p>
           </p>
-          <a href="/resume.pdf" download className="resume-btn">
+          <a
+  href="/Resume.pdf"
+  download
+  className="Resume-btn"
+>
   📄 Download Resume
 </a>
 
