@@ -20,6 +20,7 @@ function Navbar() {
         <li><a href="#🏏Cricket Journey">Cricket</a></li>
         <li><a href="#🏆Achievements">Achievements</a></li>
         <li><a href="#💻 Skills">Skills</a></li>
+        <li><a href="#👨‍💻 Projects">Projects</a></li>
         <li><a href="#📸 Gallery">Gallery</a></li>
         <li><a href="#📜Certificates">Certificates</a></li>
         <li><a href="#📞Contact">Contact</a></li>

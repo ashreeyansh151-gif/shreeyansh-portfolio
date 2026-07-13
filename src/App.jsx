@@ -18,6 +18,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Backtotop from "./components/Backtotop";
 import { motion } from "framer-motion";
+import Projects from "./componnts/Projects";
 
 function App() {
   return (
@@ -126,6 +127,7 @@ function App() {
       <Cricket />
       <Achievements />
       <Skills />
+      <Projects/>
       <Gallery />
       <Certificates />
       <Contact />
