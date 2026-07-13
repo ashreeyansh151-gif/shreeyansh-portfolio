@@ -58,7 +58,7 @@ function App() {
             </a>
 
             <a
-              href="#contact"
+              href="#📞Contact me"
               className="secondary-btn"
             >
               Contact Me
