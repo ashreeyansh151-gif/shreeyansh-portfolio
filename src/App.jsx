@@ -10,6 +10,7 @@ import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Backtotop from "./components/Backtotop";
+import resume from "../assets/resume/Shreeyansh_Suman_Acharya_Resume.pdf";
 
 
 function App() {
@@ -36,6 +37,13 @@ function App() {
   currently pursuing a BCA in AI & Data Analytics at Lovely Professional University.
   Dedicated to continuous improvement on the field and in technology.
 </p>
+<a
+  href={resume}
+  download
+  className="resume-btn"
+>
+  📄 Download Resume
+</a>
           </p>
 
           <div className="buttons">
