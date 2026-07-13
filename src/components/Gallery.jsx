@@ -1,9 +1,4 @@
 import { useState } from "react";
-import {
-  FaTimes,
-  FaChevronLeft,
-  FaChevronRight,
-} from "react-icons/fa";
 
 import profile from "../assets/images/profile.jpeg";
 import batting1 from "../assets/images/batting1.jpeg";
@@ -16,7 +11,7 @@ import front from "../assets/images/front.jpeg";
 import white from "../assets/images/white.jpeg";
 
 function Gallery() {
-  const [selectedIndex, setSelectedIndex] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const images = [
     batting1,
@@ -29,30 +24,12 @@ function Gallery() {
     sports,
   ];
 
-  const previousImage = () => {
-    setSelectedIndex(
-      selectedIndex === 0
-        ? images.length - 1
-        : selectedIndex - 1
-    );
-  };
-
-  const nextImage = () => {
-    setSelectedIndex(
-      selectedIndex === images.length - 1
-        ? 0
-        : selectedIndex + 1
-    );
-  };
-
   return (
-    <section className="Gallery" id="#📸 Gallery">
+    <section className="Gallery" id="📸 Gallery">
       <h2>📸 Gallery</h2>
-
       <p className="Gallery-subtitle">
-        A glimpse of my cricket journey through matches, practice sessions,
-        team moments, and achievements.
-      </p>
+  A glimpse of my cricket journey through matches, practice sessions, team moments, and achievements.
+</p>
 
       <div className="featured-profile">
         <img src={profile} alt="Profile" />
@@ -64,39 +41,17 @@ function Gallery() {
             key={index}
             src={image}
             alt={`Gallery ${index + 1}`}
-            onClick={() => setSelectedIndex(index)}
+            onClick={() => setSelectedImage(image)}
           />
         ))}
       </div>
 
-      {selectedIndex !== null && (
-        <div className="lightbox">
-          <button
-            className="close-btn"
-            onClick={() => setSelectedIndex(null)}
-          >
-            <FaTimes />
-          </button>
-
-          <button
-            className="prev-btn"
-            onClick={previousImage}
-          >
-            <FaChevronLeft />
-          </button>
-
-          <img
-            src={images[selectedIndex]}
-            alt="Preview"
-            className="lightbox-image"
-          />
-
-          <button
-            className="next-btn"
-            onClick={nextImage}
-          >
-            <FaChevronRight />
-          </button>
+      {selectedImage && (
+        <div
+          className="lightbox"
+          onClick={() => setSelectedImage(null)}
+        >
+          <img src={selectedImage} alt="Preview" />
         </div>
       )}
     </section>
