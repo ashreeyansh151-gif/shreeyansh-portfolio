@@ -1,3 +1,9 @@
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaEnvelope,
+} from "react-icons/fa";
 import "./App.css";
 import profile from "./assets/images/profile.jpeg";
 
@@ -41,6 +47,35 @@ function App() {
           </p>
 
           <div className="hero-buttons">
+            <div className="social-icons">
+  <a
+    href="https://github.com/ashreeyansh151-gif"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <FaGithub />
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/shreeyansh-suman-acharya-b11b262a3/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoF42r2XnSc%2B8%2BWXTI9sC3A%3D%3D"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <FaLinkedin />
+  </a>
+
+  <a
+    href="https://instagram.com/shreeyansh__18"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <FaInstagram />
+  </a>
+
+  <a href="mailto:ashreeyansh151@gmail.com">
+    <FaEnvelope />
+  </a>
+</div>
 
             <a
               href="/Resume.pdf"

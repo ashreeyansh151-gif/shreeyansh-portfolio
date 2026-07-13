@@ -828,3 +828,28 @@ html{
     background: #D4AF37;
     color: #111;
 }
+.social-icons{
+    display:flex;
+    gap:22px;
+    margin-top:35px;
+}
+
+.social-icons a{
+    width:55px;
+    height:55px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:2px solid #D4AF37;
+    border-radius:50%;
+    color:#D4AF37;
+    font-size:24px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    background:#D4AF37;
+    color:#111;
+    transform:translateY(-5px);
+    box-shadow:0 0 18px rgba(212,175,55,.6);
+}
