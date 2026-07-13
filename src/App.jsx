@@ -110,9 +110,15 @@ function App() {
 
         </motion.div>
 
-        <div className="hero-image">
+        <motion.div
+  className="hero-image"
+  initial={{ opacity: 0, x: 50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1, delay: 0.3 }}
+>
           <img src={profile} alt="Shreeyansh" />
-        </div>
+        </motion.div>
+
 
       </section>
 
