@@ -1,5 +1,6 @@
 import "./App.css";
 import profile from "./assets/images/profile.jpeg";
+
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Cricket from "./components/Cricket";
@@ -11,16 +12,18 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Backtotop from "./components/Backtotop";
 
-
 function App() {
-  return 
+  return (
     <>
       <Navbar />
-      
 
-      <div className="hero" id="home">
+      <section className="hero" id="home">
+
         <div className="hero-text">
-          <h3 className="welcome-text">🏏 Welcome to My Portfolio</h3>
+
+          <h3 className="welcome-text">
+            🏏 Welcome to My Portfolio
+          </h3>
 
           <h1>
             Shreeyansh
@@ -28,55 +31,58 @@ function App() {
             Suman Acharya
           </h1>
 
-          <h2> 🏏Cricketer | 👨‍💻AI Student</h2>
+          <h2>🏏 Cricketer | 👨‍💻 AI Student</h2>
 
           <p>
-            <p>
-  Passionate cricketer representing the Deogarh District Cricket Association,
-  currently pursuing a BCA in AI & Data Analytics at Lovely Professional University.
-  Dedicated to continuous improvement on the field and in technology.
-</p>
+            Passionate cricketer representing the Deogarh District Cricket
+            Association, currently pursuing a BCA in AI & Data Analytics at
+            Lovely Professional University. Dedicated to continuous improvement
+            on the field and in technology.
           </p>
-          <a
-  href="/Resume.pdf"
-  download
-  className="Resume-btn"
->
-  📄 Download Resume
-</a>
-      <div className="hero-buttons">
 
-        <a href="/resume.pdf" download className="resume-btn">
-          📄 Download Resume
-        </a>
+          <div className="hero-buttons">
 
-        <a href="#about" className="primary-btn">
-          Explore Journey
-  </a>
+            <a
+              href="/Resume.pdf"
+              download
+              className="resume-btn"
+            >
+              📄 Download Resume
+            </a>
 
-        <a href="#contact" className="secondary-btn">
-         Contact Me
-  </a>
+            <a
+              href="#about"
+              className="primary-btn"
+            >
+              Explore Journey
+            </a>
 
-</div>
+            <a
+              href="#contact"
+              className="secondary-btn"
+            >
+              Contact Me
+            </a>
 
-         
+          </div>
+
+        </div>
 
         <div className="hero-image">
           <img src={profile} alt="Shreeyansh" />
         </div>
-      </div>
+
+      </section>
 
       <About />
-      <Cricket/>
-      <Achievements/>
-      <Skills/>
-      <Gallery/>
-      <Certificates/>
-      <Contact/>
-      <Footer/>
-      <Backtotop/>
-
+      <Cricket />
+      <Achievements />
+      <Skills />
+      <Gallery />
+      <Certificates />
+      <Contact />
+      <Footer />
+      <Backtotop />
     </>
   );
 }
