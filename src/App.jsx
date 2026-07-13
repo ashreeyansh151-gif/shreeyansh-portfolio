@@ -10,7 +10,7 @@ import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Backtotop from "./components/Backtotop";
-import resume from "../assets/resume/Shreeyansh_Suman_Acharya_Resume.pdf";
+import Resume from "../assets/Resume/Shreeyansh_Suman_Acharya_Resume.pdf";
 
 
 function App() {
@@ -38,9 +38,9 @@ function App() {
   Dedicated to continuous improvement on the field and in technology.
 </p>
 <a
-  href={resume}
+  href={Resume}
   download
-  className="resume-btn"
+  className="Resume-btn"
 >
   📄 Download Resume
 </a>

@@ -756,7 +756,7 @@ html{
         opacity:1;
     }
 }
-.resume-btn{
+.Resume-btn{
     display:inline-block;
     margin-top:25px;
     padding:14px 32px;
@@ -768,7 +768,7 @@ html{
     transition:.3s;
 }
 
-.resume-btn:hover{
+.Resume-btn:hover{
     transform:translateY(-3px);
     box-shadow:0 10px 25px rgba(212,175,55,.4);
 }
