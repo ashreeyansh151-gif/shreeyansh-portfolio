@@ -156,8 +156,8 @@ box-shadow:0 0 40px rgba(212,175,55,.5);
     font-size:42px;
 }
 
-.hero-image img{
-    width:280px;
+.hero-image{
+    margin-top: 60px;
 }
 
 }
