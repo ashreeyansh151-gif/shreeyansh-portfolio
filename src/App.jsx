@@ -21,6 +21,7 @@ import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Backtotop from "./components/Backtotop";
+import FadeInSection from "./components/FadeInSection";
 
 function App() {
   return (
@@ -137,6 +138,7 @@ function App() {
       {/* ================= OTHER SECTIONS ================= */}
 
       <About />
+      <FadeInSection/>
       <Cricket />
       <Achievements />
       <Skills />
