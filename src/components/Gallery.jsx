@@ -14,6 +14,11 @@ import side from "../assets/images/side.jpeg";
 import sports from "../assets/images/sports.jpeg";
 import front from "../assets/images/front.jpeg";
 import white from "../assets/images/white.jpeg";
+import mom from "../assets/images/mom.jpeg";
+import mom2 from "../assets/images/mom2.jpeg";
+import runnersup from "../assets/images/runnersup.jpeg";
+
+
 
 function Gallery() {
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -27,6 +32,9 @@ function Gallery() {
     white,
     front,
     sports,
+    mom,
+    mom2,
+    runnersup,
   ];
 
   const previousImage = () => {
