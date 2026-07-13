@@ -17,6 +17,7 @@ import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Backtotop from "./components/Backtotop";
+import { motion } from "framer-motion";
 
 function App() {
   return (
@@ -25,7 +26,13 @@ function App() {
 
       <section className="hero" id="home">
 
-        <div className="hero-text">
+        <motion.div
+  className="hero-text"
+  initial={{ opacity: 0, x: -50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1 }}
+>
+
 
           <h3 className="welcome-text">
             🏏 Welcome to My Portfolio
@@ -48,34 +55,34 @@ function App() {
 
           <div className="hero-buttons">
             <div className="social-icons">
-  <a
-    href="https://github.com/ashreeyansh151-gif"
-    target="_blank"
-    rel="noreferrer"
-  >
-    <FaGithub />
-  </a>
+              <a
+                href="https://github.com/ashreeyansh151-gif"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub />
+              </a>
 
-  <a
-    href="https://www.linkedin.com/in/shreeyansh-suman-acharya-b11b262a3/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoF42r2XnSc%2B8%2BWXTI9sC3A%3D%3D"
-    target="_blank"
-    rel="noreferrer"
-  >
-    <FaLinkedin />
-  </a>
+              <a
+                href="https://www.linkedin.com/in/shreeyansh-suman-acharya-b11b262a3/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoF42r2XnSc%2B8%2BWXTI9sC3A%3D%3D"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin />
+              </a>
 
-  <a
-    href="https://instagram.com/shreeyansh__18"
-    target="_blank"
-    rel="noreferrer"
-  >
-    <FaInstagram />
-  </a>
+              <a
+                href="https://instagram.com/shreeyansh__18"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaInstagram />
+              </a>
 
-  <a href="mailto:ashreeyansh151@gmail.com">
-    <FaEnvelope />
-  </a>
-</div>
+              <a href="mailto:ashreeyansh151@gmail.com">
+                <FaEnvelope />
+              </a>
+            </div>
 
             <a
               href="/Resume.pdf"
@@ -101,7 +108,7 @@ function App() {
 
           </div>
 
-        </div>
+        </motion.div>
 
         <div className="hero-image">
           <img src={profile} alt="Shreeyansh" />
