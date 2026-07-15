@@ -4,7 +4,7 @@ import cert2 from "../assets/images/cert2.jpeg";
 function Certificates() {
   return (
     <section className="Certificates" id="📜Certificates">
-      <h2>📜 Certificates</h2>
+      <h2>📜Certificates</h2>
 
       <div className="Certificates-container">
 
