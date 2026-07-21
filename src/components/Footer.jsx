@@ -21,9 +21,9 @@ function Footer() {
         <div className="Footer-links">
           <a href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact</a>
+          <a href="#👨‍💻 Projects">Projects</a>
+          <a href="#📸 Gallery">Gallery</a>
+          <a href="#📞 Contact Me">Contact</a>
         </div>
 
         <div className="Footer-socials">
