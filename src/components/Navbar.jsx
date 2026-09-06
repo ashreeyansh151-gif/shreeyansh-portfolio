@@ -22,7 +22,7 @@ function Navbar() {
         <li><a href="#🏏Cricket Journey" onClick={closeMenu}>Cricket</a></li>
         <li><a href="#🏆Achievements" onClick={closeMenu}>Achievements</a></li>
         <li><a href="#💻 Skills" onClick={closeMenu}>Skills</a></li>
-        <li><a href="#👨‍💻 Projects" onClick={closeMenu}>Projects</a></li>
+        <li><a href="#👨‍💻Projects" onClick={closeMenu}>Projects</a></li>
         <li><a href="#📸 Gallery" onClick={closeMenu}>Gallery</a></li>
         <li><a href="#📜Certificates" onClick={closeMenu}>Certificates</a></li>
         <li><a href="#📞 Contact Me" onClick={closeMenu}>Contact</a></li>

@@ -29,9 +29,9 @@ function Projects() {
   ];
 
   return (
-    <section className="Projects" id="👨‍💻 Projects">
+    <section className="Projects" id="👨‍💻Projects">
 
-      <h2>👨‍💻 Projects</h2>
+      <h2>👨‍💻Projects</h2>
 
       <p className="Projects-subtitle">
         Some of the projects I have built during my learning journey.
