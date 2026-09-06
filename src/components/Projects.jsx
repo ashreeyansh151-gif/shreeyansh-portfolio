@@ -1,9 +1,9 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+
 import portfolio from "../assets/images/portfolio.png";
 import fifaDashboard from "../assets/images/fifa-dashboard.png";
 
 function Projects() {
-
   const projects = [
     {
       title: "Personal Portfolio",
@@ -20,10 +20,11 @@ function Projects() {
       title: "FIFA World Cup Data Visualization",
       image: fifaDashboard,
       description:
-        "An interactive FIFA World Cup data visualization dashboard analyzing matches, goals, attendance, stadiums, stages and yearly trends.",
+        "An interactive Power BI dashboard analyzing FIFA World Cup matches, goals, attendance, stadiums, tournament stages and year-wise trends.",
       tech: "Power BI • Data Visualization • Analytics",
-      live: "#",
-      github: "#",
+      live:
+        "https://app.powerbi.com/view?r=eyJrIjoiYjQ5YjE0ZWMtYjM3My00ZDI1LWI4ZjAtYzQyZDE2N2U3YjA5IiwidCI6Ijk0M2EwZDE1LTk4ZjktNDg0Mi1hYzQxLTc5N2QyZDAxNzA4OCIsImMiOjR9",
+      github: null,
     },
   ];
 
@@ -39,9 +40,9 @@ function Projects() {
       <div className="Projects-container">
 
         {projects.map((project, index) => (
-
           <div className="Project-card" key={index}>
 
+            {/* Project Image */}
             <img
               src={project.image}
               alt={project.title}
@@ -58,23 +59,27 @@ function Projects() {
 
               <div className="Project-buttons">
 
-                {project.live !== "#" && (
+                {/* Live Project */}
+                {project.live && (
                   <a
                     href={project.live}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
-                    🌐 Live Demo
+                    <FaExternalLinkAlt />
+                    &nbsp; Live Demo
                   </a>
                 )}
 
-                {project.github !== "#" && (
+                {/* GitHub */}
+                {project.github && (
                   <a
                     href={project.github}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
-                    💻 GitHub
+                    <FaGithub />
+                    &nbsp; GitHub
                   </a>
                 )}
 
@@ -83,7 +88,6 @@ function Projects() {
             </div>
 
           </div>
-
         ))}
 
       </div>
