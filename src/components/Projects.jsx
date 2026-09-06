@@ -29,7 +29,7 @@ function Projects() {
   ];
 
   return (
-    <section className="Projects" id="projects">
+    <section className="Projects" id="👨‍💻 Projects">
 
       <h2>👨‍💻 Projects</h2>
 
