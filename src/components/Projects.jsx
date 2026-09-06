@@ -24,7 +24,7 @@ function Projects() {
         "An interactive Power BI dashboard analyzing FIFA World Cup matches, goals, attendance, stadiums, tournament stages and year-wise trends.",
       tech: "Power BI • Data Visualization • Analytics",
       live:
-        "https://app.powerbi.com/view?r=eyJrIjoiYjQ5YjE0ZWMtYjM3My00ZDI1LWI4ZjAtYzQyZDE2N2U3YjA5IiwidCI6Ijk0M2EwZDE1LTk4ZjktNDg0Mi1hYzQxLTc5N2QyZDAxNzA4OCIsImMiOjR9",
+        "https://app.powerbi.com/links/VSfNUBjSZz?ctid=e14e73eb-5251-4388-8d67-8f9f2e2d5a46&pbi_source=linkShare",
       github: null,
     },
     {
