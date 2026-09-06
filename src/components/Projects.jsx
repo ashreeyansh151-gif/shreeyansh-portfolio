@@ -2,6 +2,7 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 import portfolio from "../assets/images/portfolio.png";
 import fifaDashboard from "../assets/images/fifa-dashboard.png";
+import bhubaneswari from "../assets/images/bhubaneswari.png";
 
 function Projects() {
   const projects = [
@@ -26,6 +27,15 @@ function Projects() {
         "https://app.powerbi.com/view?r=eyJrIjoiYjQ5YjE0ZWMtYjM3My00ZDI1LWI4ZjAtYzQyZDE2N2U3YjA5IiwidCI6Ijk0M2EwZDE1LTk4ZjktNDg0Mi1hYzQxLTc5N2QyZDAxNzA4OCIsImMiOjR9",
       github: null,
     },
+    {
+      title: "Maa Bhubaneswari Travels and Textile Website",
+      image: bhubaneswari,
+      description:
+        "A responsive website for Maa Bhubaneswari Travels and Textile, showcasing their services and products.",
+      tech: "HTML • CSS ",
+      live: "https://bhubaneswari-temple.vercel.app/",
+      github: null,
+    }
   ];
 
   return (
