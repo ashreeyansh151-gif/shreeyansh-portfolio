@@ -80,17 +80,7 @@ function Projects() {
                     &nbsp; Live Demo
                   </a>
                 )}
-                {/* Live Project */}
-                {project.live && (
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaExternalLinkAlt />
-                    &nbsp; Live Demo
-                  </a>
-                )}
+                
 
                 {/* GitHub */}
                 {project.github && (
