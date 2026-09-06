@@ -33,7 +33,7 @@ function Projects() {
       description:
         "A responsive website for Maa Bhubaneswari Travels and Textile, showcasing their services and products.",
       tech: "HTML • CSS ",
-      live: "https://bhubaneswari-temple.vercel.app/",
+      live: "https://maa-bhubaneswari.vercel.app/",
       github: null,
     }
   ];
