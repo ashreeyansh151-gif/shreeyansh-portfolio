@@ -1486,41 +1486,5 @@ html{
     .Project-card p{
         min-height:auto;
     }
-/* ================= PROJECT CARD IMAGE ================= */
 
-.Project-card{
-    display:flex;
-    flex-direction:column;
-}
-
-.Project-image{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    display:block;
-    border-bottom:1px solid rgba(212,175,55,.3);
-}
-
-.Project-content{
-    padding:5px 0 0;
-}
-
-.Project-card h3{
-    margin-top:20px;
-}
-
-.Project-card p{
-    min-height:85px;
-}
-
-@media(max-width:768px){
-
-    .Project-image{
-        height:200px;
-    }
-
-    .Project-card p{
-        min-height:auto;
-    }
-}
 }
