@@ -7,117 +7,148 @@ function Certificates() {
   return (
     <section className="Certificates" id="Certificates">
 
-      {/* Section Heading */}
-      <div className="section-heading">
+      {/* SECTION HEADER */}
+      <div className="certificates-heading">
         <span>📜</span>
-        <h2>Certificates & Recognition</h2>
+        <div>
+          <h2>Certificates & Recognition</h2>
+          <p>
+            A collection of my cricket achievements and professional certifications.
+          </p>
+        </div>
       </div>
 
-      <p className="certificates-intro">
-        A collection of my cricket achievements and academic certifications.
-      </p>
 
-     <div className="Certificates-container">
+      {/* CARDS */}
+      <div className="Certificates-container">
 
-        {/* SCHOOL NATIONAL CRICKET */}
-        <div className="Certificates-card national-card">
+        {/* =================================
+            SCHOOL NATIONAL CRICKET
+        ================================= */}
+        <div className="Certificates-card">
 
-          <div className="certificate-header">
-            <span className="certificate-icon">🏏</span>
+          <div className="card-top">
+            <div className="card-icon">
+              🏏
+            </div>
 
             <div>
               <h3>School National Cricket</h3>
-              <p>National-level cricket representation</p>
+              <p>National-level representation</p>
             </div>
           </div>
 
-          <div className="certificate-images">
-            <div className="certificate-image">
+
+          <div className="national-certificates">
+
+            <div className="certificate-preview">
               <img
                 src={cert1}
-                alt="School National Cricket Certificate 1"
+                alt="School National Cricket Certificate"
               />
             </div>
 
-            <div className="certificate-image">
+            <div className="certificate-preview">
               <img
                 src={cert2}
-                alt="School National Cricket Certificate 2"
+                alt="School National Cricket Certificate"
               />
             </div>
+
           </div>
 
-          <div className="certificate-footer">
+
+          <div className="card-info">
             <span>🏅</span>
-            <p>Captain – 3 Times</p>
+            <div>
+              <strong>Captain – 3 Times</strong>
+              <p>School National Cricket</p>
+            </div>
           </div>
 
         </div>
 
 
-       {/* U19 STATE CAMP */}
-<div className="Certificates-card">
-
-  <div className="certificate-header">
-    <span className="certificate-icon">🏆</span>
-
-    <div>
-      <h3>U19 State Camp</h3>
-      <p>Odisha Cricket Association</p>
-    </div>
-  </div>
-
-  {/* OCA Certificate / Image */}
-  <div className="certificate-images">
-    <div className="certificate-image">
-      <img
-        src={oca}
-        alt="Odisha Cricket Association"
-      />
-    </div>
-  </div>
-
-  <div className="achievement-content">
-    <div className="achievement-icon">
-      🏏
-    </div>
-
-    <h4>Odisha Cricket Association</h4>
-
-    <p>
-      Selected for the U19 State Cricket Camp,
-      representing my district at the state level.
-    </p>
-  </div>
-
-  <div className="certificate-footer">
-    <span>📍</span>
-    <p>Odisha • U19</p>
-  </div>
-
-</div>
-        {/* GENERATIVE AI */}
+        {/* =================================
+            U19 STATE CAMP
+        ================================= */}
         <div className="Certificates-card">
 
-          <div className="certificate-header">
-            <span className="certificate-icon">🤖</span>
+          <div className="card-top">
+            <div className="card-icon">
+              🏆
+            </div>
 
             <div>
-              <h3>Generative AI</h3>
-              <p>Professional Certification</p>
+              <h3>U19 State Camp</h3>
+              <p>Odisha Cricket Association</p>
             </div>
           </div>
 
-          <div className="single-certificate">
+
+          {/* OCA LOGO */}
+          <div className="oca-container">
+            <img
+              src={oca}
+              alt="Odisha Cricket Association"
+            />
+          </div>
+
+
+          <div className="u19-content">
+
+            <h4>Odisha Cricket Association</h4>
+
+            <p>
+              Selected for the U19 State Cricket Camp,
+              representing my district at the state level.
+            </p>
+
+          </div>
+
+
+          <div className="card-info">
+            <span>📍</span>
+            <div>
+              <strong>Odisha • U19</strong>
+              <p>State Cricket Camp</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        {/* =================================
+            GENERATIVE AI
+        ================================= */}
+        <div className="Certificates-card">
+
+          <div className="card-top">
+            <div className="card-icon">
+              🤖
+            </div>
+
+            <div>
+              <h3>Generative AI</h3>
+              <p>Professional certification</p>
+            </div>
+          </div>
+
+
+          <div className="ai-certificate">
             <img
               src={Gen_AI}
               alt="Generative AI Certificate"
             />
           </div>
 
-          <div className="certificate-footer">
+
+          <div className="card-info">
             <span>🎓</span>
-            <p>Introduction to Generative AI Studio</p>
+            <div>
+              <strong>Introduction to Generative AI Studio</strong>
+              <p>Professional Certification</p>
+            </div>
           </div>
 
         </div>

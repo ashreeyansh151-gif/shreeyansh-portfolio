@@ -554,37 +554,48 @@ height:280px;
 ========================================= */
 
 .Certificates {
-  padding: 100px 8%;
+  padding: 110px 7% 100px;
   background: #0b0b0b;
-  color: white;
+  color: #ffffff;
 }
 
-/* Heading */
 
-.section-heading {
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.certificates-heading {
+  max-width: 1200px;
+  margin: 0 auto 55px;
+
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
-}
+  justify-content: center;
 
-.section-heading span {
-  font-size: 2.3rem;
-}
+  gap: 15px;
 
-.section-heading h2 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin: 0;
-  color: #d4af37;
-}
-
-.certificates-intro {
   text-align: center;
-  color: #999;
-  font-size: 1rem;
-  margin-bottom: 55px;
+}
+
+.certificates-heading > span {
+  font-size: 2.4rem;
+}
+
+.certificates-heading h2 {
+  margin: 0;
+
+  color: #d4af37;
+
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.certificates-heading p {
+  margin: 8px 0 0;
+
+  color: #8f8f8f;
+
+  font-size: 0.95rem;
 }
 
 
@@ -594,12 +605,14 @@ height:280px;
 
 .Certificates-container {
   max-width: 1200px;
-  margin: auto;
+
+  margin: 0 auto;
 
   display: grid;
+
   grid-template-columns: repeat(3, 1fr);
 
-  gap: 28px;
+  gap: 25px;
 
   align-items: stretch;
 }
@@ -610,125 +623,131 @@ height:280px;
 ========================================= */
 
 .Certificates-card {
-  position: relative;
-
   background: #111111;
 
   border: 1px solid #292929;
 
   border-radius: 18px;
 
-  padding: 26px;
-
-  min-height: 500px;
+  padding: 24px;
 
   display: flex;
+
   flex-direction: column;
 
-  transition:
-    transform 0.3s ease,
-    border-color 0.3s ease,
-    box-shadow 0.3s ease;
+  min-height: 540px;
+
+  transition: all 0.3s ease;
 }
 
-
-/* Hover */
-
 .Certificates-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
 
-  border-color: #d4af37;
+  border-color: rgba(212, 175, 55, 0.65);
 
-  box-shadow:
-    0 15px 40px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
 
 /* =========================================
-   CARD HEADER
+   CARD TOP
 ========================================= */
 
-.certificate-header {
+.card-top {
   display: flex;
+
   align-items: center;
 
-  gap: 15px;
+  gap: 14px;
 
-  margin-bottom: 25px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #242424;
+
+  margin-bottom: 20px;
 }
 
-.certificate-icon {
+
+.card-icon {
   width: 48px;
   height: 48px;
 
+  flex-shrink: 0;
+
   display: flex;
+
   align-items: center;
   justify-content: center;
 
-  background: rgba(212, 175, 55, 0.1);
+  background: rgba(212, 175, 55, 0.08);
 
   border: 1px solid rgba(212, 175, 55, 0.25);
 
   border-radius: 12px;
 
-  font-size: 1.5rem;
-
-  flex-shrink: 0;
+  font-size: 1.45rem;
 }
 
-.certificate-header h3 {
+
+.card-top h3 {
   margin: 0 0 5px;
 
   color: #d4af37;
 
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 
   font-weight: 600;
 }
 
-.certificate-header p {
+
+.card-top p {
   margin: 0;
 
-  color: #888;
+  color: #858585;
 
-  font-size: 0.85rem;
+  font-size: 0.82rem;
 }
 
 
 /* =========================================
-   NATIONAL CERTIFICATE IMAGES
+   SCHOOL NATIONAL CERTIFICATES
 ========================================= */
 
-.certificate-images {
+.national-certificates {
   display: grid;
 
   grid-template-columns: 1fr 1fr;
 
   gap: 12px;
 
-  margin-bottom: 25px;
+  flex: 1;
 }
 
-.certificate-image {
-  height: 245px;
 
-  background: #181818;
-
-  border-radius: 12px;
+.certificate-preview {
+  height: 310px;
 
   padding: 8px;
 
+  background: #181818;
+
   border: 1px solid #292929;
 
+  border-radius: 12px;
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
   overflow: hidden;
 }
 
-.certificate-image img {
+
+.certificate-preview img {
   width: 100%;
+
   height: 100%;
 
   object-fit: contain;
@@ -738,73 +757,89 @@ height:280px;
   transition: transform 0.3s ease;
 }
 
-.certificate-image:hover img {
-  transform: scale(1.04);
+
+.certificate-preview:hover img {
+  transform: scale(1.03);
 }
 
 
 /* =========================================
-   U19 ACHIEVEMENT
+   OCA SECTION
 ========================================= */
 
-.achievement-content {
-  flex: 1;
+.oca-container {
+  height: 260px;
+
+  background: #171717;
+
+  border: 1px solid #292929;
+
+  border-radius: 14px;
 
   display: flex;
-  flex-direction: column;
 
   align-items: center;
+
   justify-content: center;
 
+  padding: 25px;
+
+  margin-bottom: 25px;
+
+  overflow: hidden;
+}
+
+
+.oca-container img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  border-radius: 8px;
+}
+
+
+/* =========================================
+   U19 CONTENT
+========================================= */
+
+.u19-content {
   text-align: center;
 
-  padding: 20px;
+  padding: 5px 15px 20px;
 }
 
-.achievement-icon {
-  width: 90px;
-  height: 90px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.u19-content h4 {
+  margin: 0 0 10px;
 
-  border-radius: 50%;
-
-  background: rgba(212, 175, 55, 0.08);
-
-  border: 1px solid rgba(212, 175, 55, 0.25);
-
-  font-size: 2.5rem;
-
-  margin-bottom: 22px;
-}
-
-.achievement-content h4 {
   color: #d4af37;
 
-  font-size: 1.3rem;
-
-  margin: 0 0 12px;
+  font-size: 1.25rem;
 }
 
-.achievement-content p {
-  color: #999;
 
-  line-height: 1.7;
+.u19-content p {
+  margin: 0;
 
-  font-size: 0.95rem;
+  color: #929292;
 
-  max-width: 280px;
+  font-size: 0.9rem;
+
+  line-height: 1.6;
 }
 
 
 /* =========================================
-   GENERATIVE AI CERTIFICATE
+   AI CERTIFICATE
 ========================================= */
 
-.single-certificate {
-  height: 285px;
+.ai-certificate {
+  height: 310px;
+
+  padding: 10px;
 
   background: #181818;
 
@@ -812,10 +847,10 @@ height:280px;
 
   border-radius: 12px;
 
-  padding: 10px;
-
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
   overflow: hidden;
@@ -823,8 +858,10 @@ height:280px;
   margin-bottom: 25px;
 }
 
-.single-certificate img {
+
+.ai-certificate img {
   width: 100%;
+
   height: 100%;
 
   object-fit: contain;
@@ -834,33 +871,60 @@ height:280px;
 
 
 /* =========================================
-   CARD FOOTER
+   CARD INFO / FOOTER
 ========================================= */
 
-.certificate-footer {
+.card-info {
+  margin-top: auto;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #242424;
+
   display: flex;
 
   align-items: center;
 
-  gap: 8px;
-
-  padding-top: 18px;
-
-  border-top: 1px solid #252525;
-
-  margin-top: auto;
+  gap: 12px;
 }
 
-.certificate-footer span {
+
+.card-info > span {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(212, 175, 55, 0.08);
+
+  border-radius: 10px;
+
   font-size: 1rem;
 }
 
-.certificate-footer p {
-  margin: 0;
 
-  color: #c5c5c5;
+.card-info strong {
+  display: block;
+
+  color: #d0d0d0;
 
   font-size: 0.9rem;
+
+  font-weight: 500;
+}
+
+
+.card-info p {
+  margin: 3px 0 0;
+
+  color: #707070;
+
+  font-size: 0.75rem;
 }
 
 
@@ -868,7 +932,7 @@ height:280px;
    TABLET
 ========================================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
 
   .Certificates-container {
     grid-template-columns: 1fr 1fr;
@@ -888,24 +952,29 @@ height:280px;
 @media (max-width: 700px) {
 
   .Certificates {
-    padding: 70px 5%;
+    padding: 80px 5%;
   }
 
-  .section-heading h2 {
+  .certificates-heading {
+    margin-bottom: 40px;
+  }
+
+  .certificates-heading h2 {
     font-size: 2rem;
   }
 
-  .section-heading span {
+  .certificates-heading > span {
     font-size: 1.8rem;
   }
 
-  .certificates-intro {
-    font-size: 0.9rem;
-    margin-bottom: 35px;
+  .certificates-heading p {
+    font-size: 0.85rem;
   }
 
   .Certificates-container {
     grid-template-columns: 1fr;
+
+    gap: 20px;
   }
 
   .Certificates-card:last-child {
@@ -916,15 +985,21 @@ height:280px;
     min-height: auto;
   }
 
-  .certificate-images {
-    grid-template-columns: 1fr 1fr;
+  .certificate-preview {
+    height: 250px;
   }
 
-  .certificate-image {
-    height: 220px;
+  .oca-container {
+    height: 230px;
+  }
+
+  .ai-certificate {
+    height: 250px;
   }
 
 }
+
+
 /* ================= CONTACT ================= */
 
 .Contact {
