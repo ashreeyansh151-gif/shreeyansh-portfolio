@@ -1,6 +1,7 @@
 import cert1 from "../assets/images/cert1.jpeg";
 import cert2 from "../assets/images/cert2.jpeg";
 import Gen_AI from "../assets/images/Gen_AI.png";
+import oca from "../assets/images/oca.jpg";
 
 function Certificates() {
   return (
@@ -16,7 +17,7 @@ function Certificates() {
         A collection of my cricket achievements and academic certifications.
       </p>
 
-      <div className="Certificates-container">
+     <div className="Certificates-container">
 
         {/* SCHOOL NATIONAL CRICKET */}
         <div className="Certificates-card national-card">
@@ -62,8 +63,17 @@ function Certificates() {
 
             <div>
               <h3>U19 State Camp</h3>
-              <p>Odisha Cricket Selection Camp</p>
+              <p>Odisha Cricket Association</p>
+              <div className="certificate-images">
+            <div className="certificate-image">
+              <img
+                src={oca}
+                alt="Odisha Cricket Association"
+              />
             </div>
+            </div>
+          </div>
+
           </div>
 
           <div className="achievement-content">
@@ -71,7 +81,7 @@ function Certificates() {
               🏏
             </div>
 
-            <h4>Odisha Cricket</h4>
+            <h4>Odisha Cricket Association</h4>
 
             <p>
               Selected for the U19 State Cricket Camp,
