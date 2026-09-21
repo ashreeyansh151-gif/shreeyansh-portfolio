@@ -1,5 +1,6 @@
 import cert1 from "../assets/images/cert1.jpeg";
 import cert2 from "../assets/images/cert2.jpeg";
+import Gen_AI from "../assets/images/Gen_AI.png";
 
 function Certificates() {
   return (
