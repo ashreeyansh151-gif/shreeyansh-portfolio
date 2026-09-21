@@ -1488,3 +1488,46 @@ html{
     }
 
 }
+.Certificates {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.Certificates h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.Certificates-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.Certificates-card {
+  padding: 20px;
+  border-radius: 15px;
+  background: #111;
+  border: 1px solid #333;
+  transition: 0.3s ease;
+}
+
+.Certificates-card:hover {
+  transform: translateY(-8px);
+}
+
+.Certificates-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.Certificates-card h3 {
+  margin-bottom: 8px;
+}
+
+.Certificates-card p {
+  color: #aaa;
+}
