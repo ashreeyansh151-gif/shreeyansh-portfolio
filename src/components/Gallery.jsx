@@ -17,6 +17,8 @@ import white from "../assets/images/white.jpeg";
 import mom from "../assets/images/mom.jpeg";
 import mom2 from "../assets/images/mom2.jpeg";
 import runnersup from "../assets/images/runnersup.jpeg";
+import Gen_AI from "../assets/images/Gen_AI.png";
+
 
 
 
@@ -35,6 +37,7 @@ function Gallery() {
     mom,
     mom2,
     runnersup,
+    Gen_AI,
   ];
 
   const previousImage = () => {
