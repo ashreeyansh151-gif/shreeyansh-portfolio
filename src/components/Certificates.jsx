@@ -55,48 +55,47 @@ function Certificates() {
         </div>
 
 
-        {/* U19 STATE CAMP */}
-        <div className="Certificates-card">
+       {/* U19 STATE CAMP */}
+<div className="Certificates-card">
 
-          <div className="certificate-header">
-            <span className="certificate-icon">🏆</span>
+  <div className="certificate-header">
+    <span className="certificate-icon">🏆</span>
 
-            <div>
-              <h3>U19 State Camp</h3>
-              <p>Odisha Cricket Association</p>
-              <div className="certificate-images">
-            <div className="certificate-image">
-              <img
-                src={oca}
-                alt="Odisha Cricket Association"
-              />
-            </div>
-            </div>
-          </div>
+    <div>
+      <h3>U19 State Camp</h3>
+      <p>Odisha Cricket Association</p>
+    </div>
+  </div>
 
-          </div>
+  {/* OCA Certificate / Image */}
+  <div className="certificate-images">
+    <div className="certificate-image">
+      <img
+        src={oca}
+        alt="Odisha Cricket Association"
+      />
+    </div>
+  </div>
 
-          <div className="achievement-content">
-            <div className="achievement-icon">
-              🏏
-            </div>
+  <div className="achievement-content">
+    <div className="achievement-icon">
+      🏏
+    </div>
 
-            <h4>Odisha Cricket Association</h4>
+    <h4>Odisha Cricket Association</h4>
 
-            <p>
-              Selected for the U19 State Cricket Camp,
-              representing my district at the state level.
-            </p>
-          </div>
+    <p>
+      Selected for the U19 State Cricket Camp,
+      representing my district at the state level.
+    </p>
+  </div>
 
-          <div className="certificate-footer">
-            <span>📍</span>
-            <p>Odisha • U19</p>
-          </div>
+  <div className="certificate-footer">
+    <span>📍</span>
+    <p>Odisha • U19</p>
+  </div>
 
-        </div>
-
-
+</div>
         {/* GENERATIVE AI */}
         <div className="Certificates-card">
 
