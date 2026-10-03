@@ -22,7 +22,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Backtotop from "./components/Backtotop";
 import FadeInSection from "./components/FadeInSection";
-
+import Chatbot from "./Chatbot";
 function App() {
   return (
     <>
@@ -155,6 +155,7 @@ function App() {
       <Contact />
       <Footer />
       <Backtotop />
+      <Chatbot />
 
     </>
   );
