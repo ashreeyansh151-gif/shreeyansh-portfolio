@@ -6,6 +6,8 @@ function Chatbot() {
 
   const [answers, setAnswers] = useState([]);
   const [currentAnswer, setCurrentAnswer] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const questions = [
     "What type of business do you have? 🏢",
@@ -20,16 +22,60 @@ function Chatbot() {
     setStep(1);
   };
 
-  const handleNext = () => {
+  const handleNext = async () => {
     if (currentAnswer.trim() === "") {
       alert("Please enter your answer.");
       return;
     }
 
-    setAnswers([...answers, currentAnswer]);
+    const updatedAnswers = [...answers, currentAnswer.trim()];
 
+    setAnswers(updatedAnswers);
     setCurrentAnswer("");
-    setStep(step + 1);
+
+    if (step < questions.length) {
+      setStep(step + 1);
+      return;
+    }
+
+    // Prepare lead information
+    const lead = {
+      businessType: updatedAnswers[0],
+      websiteNeed: updatedAnswers[1],
+      existingWebsite: updatedAnswers[2],
+      budget: updatedAnswers[3],
+      name: updatedAnswers[4],
+      contact: updatedAnswers[5],
+    };
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("http://localhost:3001/api/leads", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(lead),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitted(true);
+        setStep(questions.length + 1);
+      } else {
+        alert("Something went wrong while saving your details.");
+      }
+    } catch (error) {
+      console.error("Lead submission error:", error);
+
+      alert(
+        "Could not connect to the lead server. Make sure server.js is running."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -85,7 +131,7 @@ function Chatbot() {
             Let's Build Your Website 🚀
           </h2>
 
-          {/* Starting Screen */}
+          {/* Start Screen */}
           {step === 0 && (
             <>
               <p>
@@ -125,6 +171,7 @@ function Chatbot() {
                 type="text"
                 placeholder="Type your answer..."
                 value={currentAnswer}
+                disabled={isSubmitting}
                 onChange={(e) => setCurrentAnswer(e.target.value)}
                 onKeyDown={(e) => {
                   if (e.key === "Enter") {
@@ -145,17 +192,19 @@ function Chatbot() {
 
               <button
                 onClick={handleNext}
+                disabled={isSubmitting}
                 style={{
                   padding: "10px 18px",
                   background: "#D4AF37",
                   color: "#000",
                   border: "none",
                   borderRadius: "8px",
-                  cursor: "pointer",
+                  cursor: isSubmitting ? "wait" : "pointer",
                   fontWeight: "600",
+                  opacity: isSubmitting ? 0.6 : 1,
                 }}
               >
-                Next →
+                {isSubmitting ? "Saving..." : "Next →"}
               </button>
 
               <p
@@ -170,8 +219,8 @@ function Chatbot() {
             </>
           )}
 
-          {/* Completion Screen */}
-          {step > questions.length && (
+          {/* Success Screen */}
+          {step > questions.length && submitted && (
             <>
               <p
                 style={{
@@ -186,30 +235,17 @@ function Chatbot() {
                   lineHeight: "1.6",
                 }}
               >
-                I've collected your project details. I'll get back to you
-                soon to discuss your website.
+                Your project details have been received successfully.
               </p>
 
-              {/* Temporary display of collected answers */}
-              <div
+              <p
                 style={{
-                  marginTop: "15px",
-                  padding: "12px",
-                  background: "#1c1c1c",
-                  borderRadius: "8px",
-                  fontSize: "13px",
+                  color: "#D4AF37",
+                  fontWeight: "600",
                 }}
               >
-                <strong style={{ color: "#D4AF37" }}>
-                  Your Details
-                </strong>
-
-                {answers.map((answer, index) => (
-                  <p key={index} style={{ margin: "8px 0" }}>
-                    <strong>{index + 1}.</strong> {answer}
-                  </p>
-                ))}
-              </div>
+                I'll get back to you soon. 🚀
+              </p>
             </>
           )}
         </div>
